@@ -1,0 +1,20 @@
+:root {
+    --cor-fundo: #0b0f14;
+    --cor-superficie: #111820;
+    --cor-superficie-hover: #17212b;
+
+    --cor-borda: #263442;
+
+    --cor-destaque: #00e5ff;
+    --cor-destaque-hover: #00b8cc;
+
+    --cor-texto: #f1f5f9;
+    --cor-texto-secundario: #94a3b8;
+
+    --espacamento-pequeno: 10px;
+    --espacamento-medio: 20px;
+    --espacamento-grande: 40px;
+
+    --raio: 8px;
+    --largura-conteudo: 1000px;
+}
