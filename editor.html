@@ -10,10 +10,13 @@
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/variable.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/editor.css">
+    
 </head>
 
 <body>
 
+    
     <header class="header">
         <h1>Editor De Menu</h1>
     </header>
@@ -38,9 +41,69 @@
                 <input type="text" id="img-url" placeholder="www.suaImagemAqui.com" >
             </div>
 
+            <div class="grupo-controle layout-duplo">
+                <div>
+                    <label for="cor-fundo-menu">Cor do Fundo (Menu):</label>
+
+                    <input type="color" id="cor-fundo-menu" value="#263442">
+                </div>
 
 
+                <div>
+                    <label for="cor-fundo-item">Cor do Fundo (Item):</label>
+                    <input type="color" id="cor-fundo-item" value="#111820">
+                </div>
+            </div>
+
+            <div class="grupo-controle layout-duplo">
+                <div>
+                    <label for="cor-texto">Cor do Texto:</label>
+                    <input type="color" id="cor-texto" value="#00e5ff">
+                </div>
+                <div>
+                    <label for="cor-borda">Cor da Borda:</label>
+                    <input type="color" id="cor-borda" value="#f1f5f9">
+                </div>
+            </div>
+
+            <div class="grupo-controle">
+                <label for="alinhamento">Distribuição dos Itens:</label>
+                <select id="alinhamento">
+                    <option value="flex-start">Esquerda</option>
+                    <option value="center" selected>Centro</option>
+                    <option value="flex-end">Direita</option>
+                    <option value="space-around">Espaçado</option>
+                </select>
+            </div>
+
+            <div class="grupo-controle">
+                <label for="espacamento">Espaçamento dos Itens (Gap): <span id="valor-espacamento">15px</span></label>
+                <input type="range" id="espacamento" min="0" max="50" value="15">
+            </div>
+
+            <div class="gerenciar-itens">
+                <h3>Gerenciar Itens</h3>
+                <div id="lista-inputs-itens">
+
+                </div>
+                <div class="botoes-acao">
+                    <button id="btn-adicionar" class="btn-sucesso">+ Adicionar Item</button>
+                    <button id="btn-remover" class="btn-perigo" disabled>- Remover Último</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="painel-preview">
+            <h2>Resultado</h2>
+            <div class="area-resultado">
             
+                <div id="menu-customizado" class="menu-gerado">
+                    <img id="preview-img" src="#" alt="Logo Customizada" style="display: none;">
+                    <nav id="preview-nav">
+                        
+                    </nav>
+                </div>
+            </div>
         </section>
 
     </main>
@@ -48,6 +111,8 @@
     <footer class="footer">
         <p>Interação Web &copy; 2026</p>
     </footer>
+
+    <script src="JS/editor.js"></script>
 
 </body>
 
