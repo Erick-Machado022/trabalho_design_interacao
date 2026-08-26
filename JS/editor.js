@@ -23,7 +23,7 @@ let itensDoMenu = ['Home', 'Sobre', 'Contato'];
 
 
 function atualizarPreview() {
-    // A. Atualizar Imagem
+    
     if (inputsEstilo.imgUrl.value.trim() !== "") {
         previewImg.src = inputsEstilo.imgUrl.value;
         previewImg.style.display = 'block';
