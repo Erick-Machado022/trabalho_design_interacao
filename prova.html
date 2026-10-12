@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prova Online | Interação Web</title>
+
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/variable.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/prova.css">
+</head>
+<body>
+
+    <site-header titulo="Prova Online"></site-header>
+
+    <site-nav></site-nav>
+
+    <main>
+
+        
+        <info-card>
+            <span slot="titulo">Como funciona a avaliação?</span>
+            <p>
+                Responda a todas as questões antes de corrigir a prova.
+                Todas as questões possuem o mesmo peso na nota.
+                Após conferir o resultado, você poderá refazer a avaliação.
+            </p>
+        </info-card>
+
+
+        <section class="prova-introducao">
+            <h2>Prova de JavaScript</h2>
+            <p>
+                Teste seus conhecimentos sobre JavaScript
+                e conceitos de desenvolvimento web.
+            </p>
+        </section>
+
+        <section class="prova-conteudo">
+            <my-test></my-test>
+        </section>
+    </main>
+
+    <site-footer></site-footer>
+
+    <script src="JS/components.js"></script>
+    <script src="JS/prova.js"></script>
+</body>
+</html>

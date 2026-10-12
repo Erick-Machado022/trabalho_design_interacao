@@ -1,0 +1,125 @@
+
+:host {
+    display: block;
+    color: #f1f5f9;
+    font-family: Arial, sans-serif;
+}
+
+.prova {
+    background: #111820;
+    border: 1px solid #263442;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #00e5ff;
+}
+
+.questao {
+    background: #0b0f14;
+    border: 1px solid #263442;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 18px;
+}
+
+.enunciado {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.alternativa {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.alternativa:hover {
+    background: #263442;
+}
+
+input[type="radio"] {
+    margin-top: 4px;
+    accent-color: #00e5ff;
+}
+
+button {
+    background: #00e5ff;
+    color: #0b0f14;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(0.9);
+}
+
+
+.resultado {
+    margin-top: 24px;
+}
+
+.resultado:empty {
+    display: none;
+}
+
+.nota {
+    background: #263442;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.nota h3 {
+    color: #00e5ff;
+    margin-top: 0;
+}
+
+.resposta {
+    padding: 14px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    background: #0b0f14;
+    border: 1px solid #263442;
+}
+
+.resposta p {
+    margin: 8px 0;
+}
+
+.resposta-correta {
+    border-left: 4px solid #22c55e;
+}
+
+.resposta-incorreta {
+    border-left: 4px solid #ef4444;
+}
+
+.botao-refazer {
+    margin-top: 12px;
+}
+
+
+@media (max-width: 480px) {
+    .prova {
+        padding: 14px;
+    }
+
+    .questao {
+        padding: 12px;
+    }
+
+    button {
+        width: 100%;
+    }
+}

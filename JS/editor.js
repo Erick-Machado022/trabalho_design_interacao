@@ -98,8 +98,6 @@ btnRemover.addEventListener('click', () => {
 });
 
 
-Object.values(inputsEstilo).forEach(input => {
-    input.addEventListener('input', atualizarPreview);
-});
+
 
 atualizarPreview();

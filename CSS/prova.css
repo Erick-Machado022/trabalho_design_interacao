@@ -1,0 +1,77 @@
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+/* Introdução da prova */
+
+.prova-introducao {
+    margin: 24px 0;
+    padding: 24px;
+    background-color: #111820;
+    border: 1px solid #263442;
+    border-radius: 16px;
+}
+
+.prova-introducao h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #00e5ff;
+    font-size: 1.6rem;
+}
+
+.prova-introducao p {
+    margin-bottom: 0;
+    color: #f1f5f9;
+    line-height: 1.7;
+}
+
+/* Área que contém o componente da prova */
+
+.prova-conteudo {
+    width: 100%;
+    margin: 24px 0;
+}
+
+/* Ajustes responsivos */
+
+@media (max-width: 768px) {
+    main {
+        padding: 16px;
+    }
+
+    .prova-introducao {
+        padding: 18px;
+    }
+
+    .prova-introducao h2 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 12px;
+    }
+
+    .prova-introducao {
+        padding: 16px;
+        margin: 16px 0;
+    }
+
+    .prova-introducao h2 {
+        font-size: 1.25rem;
+    }
+
+    .prova-introducao p {
+        font-size: 0.95rem;
+    }
+
+    .prova-conteudo {
+        margin: 16px 0;
+    }
+}
